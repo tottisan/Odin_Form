@@ -89,7 +89,6 @@ input:focus {
 article > header {
   padding: 1rem 0 1rem 2rem;
   width: 100%;
-  max-width: 45rem;
 }
 
 article > section {
@@ -137,7 +136,7 @@ span {
 }
 
 /* Mobile */
-@media (min-width: 475px) {
+@media (min-width: 350px) {
   main {
     flex-direction: column;
   }
@@ -153,6 +152,7 @@ span {
 
   article > header {
     padding: 2rem;
+    max-width: 45rem;
   }
 
   header > h1,
@@ -181,6 +181,10 @@ span {
 }
 
 @media (min-width: 768px) {
+  article > header {
+    max-width: unset;
+  }
+
   header > h1,
   h2 {
     font-size: 1.2rem;
